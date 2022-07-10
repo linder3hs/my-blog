@@ -1,3 +1,4 @@
+import Image from "next/image";
 import styles from "../../styles/Home.module.css";
 
 interface Props {
@@ -17,7 +18,7 @@ const Card = ({ name, date, description, image }: Props) => {
           <p className={styles.description}>{description}</p>
         </div>
         <div>
-          <img src={image} alt={name} width={112} height={112} />
+          <Image src={image} alt={name} width={112} height={112} />
         </div>
       </div>
       <hr />
