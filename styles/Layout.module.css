@@ -1,0 +1,14 @@
+.img {
+  background: url("../assets/delab.png");
+  height: 150px;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: auto;
+  background-color: aliceblue;
+}
+
+.container {
+  max-width: 40%;
+  margin-top: 70px !important;
+  margin: auto;
+}
