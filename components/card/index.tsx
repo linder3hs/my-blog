@@ -18,8 +18,14 @@ const Card = ({ name, date, description, image }: Props) => {
           <p className={styles.description}>{description}</p>
         </div>
         <div>
-          <Image src={image} alt={name} width={112} height={112} />
+          <Image src={image} alt={name} width={224} height={224} />
         </div>
+      </div>
+      <div className={styles.tag}>
+        <span>NodeJS</span>
+        <span>mvp</span>
+        <span>Software</span>
+        <b>2 min read</b>
       </div>
       <hr />
     </div>

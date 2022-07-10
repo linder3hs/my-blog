@@ -31,3 +31,36 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
+.list {
+  display: flex;
+  list-style: none;
+  padding-left: 0px;
+}
+
+.list > li {
+  padding: 10px;
+}
+
+.btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.tag {
+  margin-bottom: 40px;
+}
+
+.tag > span {
+  margin: 5px;
+  padding: 7px;
+  font-size: 12px;
+  background-color: #d3d3d3;
+  border-radius: 20px;
+}
+
+.tag > b {
+  font-size: 12px;
+  margin-left: 20px;
+}
