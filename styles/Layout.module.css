@@ -12,3 +12,9 @@
   margin-top: 70px !important;
   margin: auto;
 }
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 90%;
+  }
+}
