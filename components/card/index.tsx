@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "../../styles/Home.module.css";
+import Link from "next/link";
 
 interface Props {
   name: string;
@@ -10,9 +11,13 @@ interface Props {
 
 const Card = ({ name, date, description, image }: Props) => {
   return (
-    <div className={styles.card}>
+    <div>
       <p className={styles.textGray}>{date}</p>
-      <h2>{name}</h2>
+      <Link href={`/post/${name}`} className={styles.card}>
+        <a>
+          <h2>{name}</h2>
+        </a>
+      </Link>
       <div className={styles.cardContent}>
         <div>
           <p className={styles.description}>{description}</p>

@@ -1,10 +1,10 @@
 .img {
-  background: url("../assets/delab.png");
+  background: url("../assets/cover.png");
   height: 150px;
   background-repeat: no-repeat;
   background-position: top;
-  background-size: auto;
-  background-color: aliceblue;
+  background-size: contain;
+  background-color: #072b4e;
 }
 
 .container {
