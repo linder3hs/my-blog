@@ -1,5 +1,3 @@
-import Image from "next/image";
-import delab from "../../assets/delab.png";
 import styles from "../../styles/Layout.module.css";
 
 interface Props {
@@ -9,7 +7,9 @@ interface Props {
 export default function Layout({ children }: Props) {
   return (
     <div>
-      <div className={styles.img}></div>
+      <video className={styles.video} autoPlay loop>
+        <source src="/cover.mp4" />
+      </video>
       <div className={styles.container}>{children}</div>
     </div>
   );
