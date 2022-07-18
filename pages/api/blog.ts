@@ -1,7 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import { BASE_URL } from "./service";
 
-type Data = {
+export type Data = {
   name: string;
   description: string;
   tags: string[];
@@ -9,7 +9,7 @@ type Data = {
   read_time: string;
 };
 
-type ErrorRes = {
+export type ErrorRes = {
   ok: boolean;
   error: string;
 };

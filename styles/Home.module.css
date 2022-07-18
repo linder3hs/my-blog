@@ -64,3 +64,9 @@
   font-size: 12px;
   margin-left: 20px;
 }
+
+.image {
+  width: 200px;
+  height: 200px;
+  position: "relative";
+}
