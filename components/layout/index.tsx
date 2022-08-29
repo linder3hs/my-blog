@@ -1,12 +1,5 @@
 import { ReactNode } from "react";
 import Link from "next/link";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faTwitter,
-  faInstagram,
-  faGithub,
-} from "@fortawesome/free-brands-svg-icons";
-import styles from "../../styles/Layout.module.css";
 
 interface Props {
   children: ReactNode;
@@ -16,48 +9,35 @@ export default function Layout({ children }: Props) {
   return (
     <div>
       <div>
-        <nav className={styles.nav}>
+        <nav className="flex justify-between p-8">
           <div>
             <ul>
               <li>
-                <Link href="/learn"> Learn</Link>
-              </li>
-              <li>
-                <Link href="/Blog">Blog</Link>
-              </li>
-              <li>
-                <Link href="/Bookmarks">Bookmarks</Link>
-              </li>
-              <li>
-                <Link href="/Projects">Projects</Link>
-              </li>
-              <li>
-                <Link href="/Hassinger">Linder Hassinger</Link>
+                <Link href="/">
+                  <h3 className="text-2xl">linder3hs</h3>
+                </Link>
               </li>
             </ul>
           </div>
           <div>
-            <ul>
-              <li>
-                <Link href="https://twitter.com/linder3hs">
-                  <FontAwesomeIcon icon={faTwitter} />
-                </Link>
+            <ul className="flex justify-between">
+              <li className="pr-5">
+                <Link href="/learn"> Learn</Link>
               </li>
-              <li>
-                <Link href="https://www.instagram.com/linder3hs/">
-                  <FontAwesomeIcon icon={faInstagram} />
-                </Link>
+              <li className="pr-5">
+                <Link href="/blog">Blog</Link>
               </li>
-              <li>
-                <Link href="https://github.com/linder3hs">
-                  <FontAwesomeIcon icon={faGithub} />
-                </Link>
+              <li className="pr-5">
+                <Link href="/bookmarks">Bookmarks</Link>
+              </li>
+              <li className="pr-5">
+                <Link href="/projects">Projects</Link>
               </li>
             </ul>
           </div>
         </nav>
       </div>
-      <div className={styles.container}>{children}</div>
+      <div>{children}</div>
     </div>
   );
 }

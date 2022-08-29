@@ -1,32 +1,43 @@
 import type { NextPage } from "next";
-import Card from "../components/card";
-import styles from "../styles/Home.module.css";
+import Image from "next/image";
 import { Data } from "./api/blog";
+import linder from "../assets/linder.png";
 
-type Props = {
-  posts: Data[];
-};
-
-const Home: NextPage<Props> = ({ posts }) => {
+const Home: NextPage = () => {
   return (
-    <div>
-      {posts.map((post: Data, index: number) => (
-        <Card
-          key={index}
-          name={post.name}
-          date={post.read_time}
-          description={post.description}
-          image={post.image}
-        />
-      ))}
+    <div className="flex items-center justify-evenly h-screen">
+      <div className="columns-2">
+        <div>
+          <h1 className="text-5xl font-bold">Hi I am Linder Hassinger</h1>
+          <h1 className="text-5xl font-bold mt-3"> a Software Developer</h1>
+          <h4 className="mt-4">
+            <span>
+              Front End
+              <span className="text-red-500 text-2xl">
+                &nbsp;&nbsp;*&nbsp;&nbsp;
+              </span>
+            </span>
+            <span>
+              Back End{" "}
+              <span className="text-red-500 text-2xl">
+                &nbsp;&nbsp;*&nbsp;&nbsp;
+              </span>
+            </span>
+            <span>Mobile</span>
+          </h4>
+        </div>
+        <div className="grayscale flex justify-end">
+          <Image
+            src={linder}
+            alt="Linder Hassinger"
+            layout="intrinsic"
+            width={300}
+            height={400}
+          />
+        </div>
+      </div>
     </div>
   );
-};
-
-Home.getInitialProps = async () => {
-  const res = await fetch("https://linder3hs.github.io/blog-json/blog.json");
-  const posts = await res.json();
-  return { posts };
 };
 
 export default Home;
