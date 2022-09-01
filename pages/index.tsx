@@ -1,7 +1,4 @@
 import type { NextPage } from "next";
-import Image from "next/image";
-import { Banner } from "../components";
-import linder from "../assets/linder.png";
 
 const Home: NextPage = () => {
   return (

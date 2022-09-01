@@ -1,13 +1,12 @@
-import { Fragment, ReactNode } from "react";
-import Image from "next/image";
-import { Disclosure, Menu, Transition } from "@headlessui/react";
-import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import { ReactNode } from "react";
+import { Disclosure } from "@headlessui/react";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
-  { name: "Blog", href: "#", current: true },
-  { name: "Learn", href: "#", current: false },
-  { name: "Bookmarks", href: "#", current: false },
-  { name: "Projects", href: "#", current: false },
+  { name: "Blog", href: "/", current: true },
+  { name: "Learn", href: "/learn", current: false },
+  { name: "Bookmarks", href: "/bookmarks", current: false },
+  { name: "Projects", href: "/projects", current: false },
 ];
 
 function classNames(...classes: any) {
@@ -25,7 +24,7 @@ export default function Layout({ children }: Props) {
         <Disclosure as="nav" className="bg-gray-800">
           {({ open }) => (
             <>
-              <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+              <div className="mx-auto max-w-7xl px-6 sm:px-6 lg:px-8">
                 <div className="relative flex h-16 items-center justify-between">
                   <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                     {/* Mobile menu button*/}
