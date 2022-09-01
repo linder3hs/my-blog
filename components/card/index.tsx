@@ -1,5 +1,4 @@
 import Image from "next/image";
-import styles from "../../styles/Home.module.css";
 import Link from "next/link";
 
 interface Props {
@@ -12,17 +11,17 @@ interface Props {
 const Card = ({ name, date, description, image }: Props) => {
   return (
     <div>
-      <p className={styles.textGray}>{date}</p>
-      <Link href={`/post/${name}`} className={styles.card}>
+      <p>{date}</p>
+      <Link href={`/post/${name}`}>
         <a>
           <h2>{name}</h2>
         </a>
       </Link>
-      <div className={styles.cardContent}>
+      <div>
         <div>
-          <p className={styles.description}>{description}</p>
+          <p>{description}</p>
         </div>
-        <div className={styles.image}>
+        <div>
           <Image
             src={image}
             alt={name}
@@ -33,7 +32,7 @@ const Card = ({ name, date, description, image }: Props) => {
           />
         </div>
       </div>
-      <div className={styles.tag}>
+      <div>
         <span>NodeJS</span>
         <span>mvp</span>
         <span>Software</span>
