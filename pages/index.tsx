@@ -1,12 +1,12 @@
 import type { NextPage } from "next";
 import Image from "next/image";
+import Head from "next/head";
 
 type Props = {
   data: any;
 };
 
 const Home: NextPage<Props> = ({ data }) => {
-  console.log("data", data);
   return (
     <div
       className="flex justify-center items-center"
@@ -14,6 +14,9 @@ const Home: NextPage<Props> = ({ data }) => {
         height: "80vh",
       }}
     >
+      <Head>
+        <title>Linder Hassinger</title>
+      </Head>
       <div className="p-4">
         <Image
           src={data.avatar_url}
