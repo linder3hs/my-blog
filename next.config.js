@@ -7,6 +7,8 @@ const nextConfig = {
       "linder3hs.github.io",
       "www.cloudways.com",
       "tailwindui.com",
+      "api.github.com",
+      "avatars.githubusercontent.com",
       "images.unsplash.com",
     ],
   },
