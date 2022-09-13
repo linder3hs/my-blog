@@ -3,10 +3,18 @@ import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
-  { name: "Blog", href: "/", current: true },
-  { name: "Learn", href: "/learn", current: false },
+  { name: "Blog", href: "https://medium.com/@linderhassinger", current: true },
+  {
+    name: "Learn",
+    href: "https://www.youtube.com/channel/UCPAg4A1jRtkY3lPdGKGS2Vg",
+    current: false,
+  },
   { name: "Bookmarks", href: "/bookmarks", current: false },
-  { name: "Projects", href: "/projects", current: false },
+  {
+    name: "Projects",
+    href: "https://github.com/linder3hs?tab=repositories",
+    current: false,
+  },
 ];
 
 function classNames(...classes: any) {
