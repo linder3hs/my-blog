@@ -9,8 +9,8 @@ type Props = {
 
 const Button: NextPage<Props> = ({ title, type, url }) => {
   const btnType: { [key: string]: string } = {
-    primary: "bg-red-500 text-white py-2 px-6 rounded mr-2",
-    secondary: "bg-slate-900 text-white py-2 px-6 rounded mr-2",
+    primary: "bg-red-500 text-white py-2 px-6 rounded mr-2 mt-2",
+    secondary: "bg-slate-900 text-white py-2 px-6 rounded mr-2 mt-2",
   };
 
   return (

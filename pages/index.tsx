@@ -27,8 +27,8 @@ const Home: NextPage<Props> = ({ data }) => {
           <h1 className="text-1xl mb-3 center">{data.location}</h1>
         </div>
       </div>
-      <div className="flex mt-10 justify-evenly w-full">
-        <div>
+      <div className="flex mt-10 justify-center w-full">
+        <div className="text-center">
           <Button
             title="Blog"
             type="secondary"
