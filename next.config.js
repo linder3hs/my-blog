@@ -9,6 +9,7 @@ const nextConfig = {
       "tailwindui.com",
       "api.github.com",
       "avatars.githubusercontent.com",
+      "api.iconify.design",
       "images.unsplash.com",
     ],
   },
