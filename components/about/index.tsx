@@ -10,7 +10,7 @@ type Props = {
 const About: NextPage<Props> = ({ data }) => {
   return (
     <>
-      <div className="flex justify-center items-center">
+      <div className="flex flex-col md:flex-row justify-center items-center">
         <div className="p-4">
           <Image
             src={data.avatar_url}
@@ -20,7 +20,6 @@ const About: NextPage<Props> = ({ data }) => {
             className="rounded-full"
           />
         </div>
-
         <div className="p-4">
           <h1 className="text-2xl mb-4 center font-bold">{data.name}</h1>
           <h3 className="text-1xl mb-3 flex items-center gap-2">

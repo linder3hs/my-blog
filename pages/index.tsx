@@ -8,7 +8,7 @@ interface Props {
 const Home: NextPage<Props> = ({ data }) => {
   const { user, repos } = data;
   return (
-    <div className="mt-20">
+    <div className="lg:mt-20">
       <About data={user} />
       <Repositories data={repos} />
     </div>
