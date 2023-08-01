@@ -11,7 +11,7 @@ const Repositories: NextPage<Props> = ({ data }) => {
   const router = useRouter();
 
   return (
-    <div className="p-12">
+    <div className="p-5 lg:p-12">
       <div className="mt-6">
         <h1 className="text-2xl">Public Repositories</h1>
       </div>
@@ -46,14 +46,16 @@ const Repositories: NextPage<Props> = ({ data }) => {
                 </div>
               </div>
               {repo.topics.length > 0 && <hr className="my-3" />}
-              {repo.topics.map((topic: string) => (
-                <span
-                  key={topic}
-                  className="bg-gray-200 text-gray-500 text-sm rounded-full px-2 py-1 mr-4"
-                >
-                  {topic}
-                </span>
-              ))}
+              <div className="flex flex-wrap gap-3">
+                {repo.topics.map((topic: string) => (
+                  <span
+                    key={topic}
+                    className="bg-gray-200 text-gray-500 text-sm rounded-full px-2 py-1 mr-4"
+                  >
+                    {topic}
+                  </span>
+                ))}
+              </div>
             </div>
           ))}
         </div>

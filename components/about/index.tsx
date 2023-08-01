@@ -23,22 +23,22 @@ const About: NextPage<Props> = ({ data }) => {
 
         <div className="p-4">
           <h1 className="text-2xl mb-4 center font-bold">{data.name}</h1>
-          <h1 className="text-1xl mb-3 flex items-center gap-2">
+          <h3 className="text-1xl mb-3 flex items-center gap-2">
             <Image src={ICONS.laptop} alt="" width={20} height={20} />
             {data.bio}
-          </h1>
-          <h1 className="text-1xl mb-3 flex items-center gap-2 center">
+          </h3>
+          <h3 className="text-1xl mb-3 flex items-center gap-2 center">
             <Image src={ICONS.octocat} alt="" width={20} height={20} />
             {data.login}
-          </h1>
-          <h1 className="text-1xl mb-3 flex items-center gap-2 center">
+          </h3>
+          <h3 className="text-1xl mb-3 flex items-center gap-2 center">
             <Image src={ICONS.company} alt="" width={20} height={20} />
             {data.company}
-          </h1>
-          <h1 className="text-1xl mb-3 flex items-center gap-2 center">
+          </h3>
+          <h3 className="text-1xl mb-3 flex items-center gap-2 center">
             <Image src={ICONS.market} alt="" width={20} height={20} />
             {data.location}
-          </h1>
+          </h3>
         </div>
       </div>
       <div className="flex mt-10 justify-center w-full">
