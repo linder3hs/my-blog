@@ -22,14 +22,14 @@ const Repositories: NextPage<Props> = ({ data }) => {
               key={repo.id}
               className="bg-white rounded-lg shadow-lg p-4 hover:shadow-2xl transition duration-300 ease-in-out"
             >
-              <h1
+              <h2
                 className="text-xl font-bold cursor-pointer hover:text-red-500"
                 onClick={() => {
                   router.push(repo.html_url);
                 }}
               >
                 {repo.name}
-              </h1>
+              </h2>
               <p className="text-gray-500 mt-3">{repo.description}</p>
               <div className="flex justify-between items-center mt-4">
                 <div className="flex items-center">
