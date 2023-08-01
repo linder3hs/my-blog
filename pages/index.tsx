@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import { Repositories, About } from "../components";
+
 interface Props {
   data: any;
 }
@@ -19,7 +20,9 @@ export default Home;
 export async function getServerSideProps() {
   const [user, repos] = await Promise.all([
     fetch("https://api.github.com/users/linder3hs"),
-    fetch("https://api.github.com/users/linder3hs/repos?sort=pushed&per_page=100"),
+    fetch(
+      "https://api.github.com/users/linder3hs/repos?sort=pushed&per_page=100"
+    ),
   ]);
 
   const [userData, reposData] = await Promise.all([user.json(), repos.json()]);

@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <Layout>
       <Head>
-        <title>Linder Hassinger - Linder Tech</title>
+        <title>Linder Hassinger - Software Developer</title>
       </Head>
       <Component {...pageProps} />
     </Layout>
