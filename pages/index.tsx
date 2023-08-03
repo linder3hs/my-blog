@@ -21,7 +21,7 @@ export async function getServerSideProps() {
   const [user, repos] = await Promise.all([
     fetch("https://api.github.com/users/linder3hs"),
     fetch(
-      "https://api.github.com/users/linder3hs/repos?sort=pushed&per_page=100"
+      "https://api.github.com/users/linder3hs/repos?sort=pushed&per_page=21"
     ),
   ]);
 
